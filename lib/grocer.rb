@@ -18,6 +18,7 @@ def consolidate_cart(cart)
     else 
       new_cart << index[:item]
     end 
+  end 
     new_cart
     binding.pry
 end
