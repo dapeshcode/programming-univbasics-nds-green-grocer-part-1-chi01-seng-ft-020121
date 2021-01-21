@@ -14,9 +14,12 @@ def consolidate_cart(cart)
   new_cart = []
   cart.each do |index|
     new_cart.each do |item|
-      if index[:item] == new_cart[item]
-        cart[:count] += 1
-      else 
+      if index[:item] != new_cart[item]
+        new_cart << index[:item]
+      elsif index[:item] == new_cart[item]
+        cart[:count] += 1 
+      end 
+    end 
         
     
   end 
