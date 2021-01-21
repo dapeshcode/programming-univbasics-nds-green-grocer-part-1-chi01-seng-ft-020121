@@ -17,6 +17,7 @@ def consolidate_cart(cart)
    if find_item_by_name_in_collection(name, new_cart)
       index[:count] += 1 
     else 
+      index[:count] = 1
       new_cart << index
       binding.pry
       new_cart[:count] = 1
