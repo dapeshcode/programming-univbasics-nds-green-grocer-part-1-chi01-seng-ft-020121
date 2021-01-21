@@ -20,10 +20,7 @@ def consolidate_cart(cart)
         cart[:count] += 1 
       end 
     end 
-        
-    
   end 
-  
 end
 
 
